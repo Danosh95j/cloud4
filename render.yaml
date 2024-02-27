@@ -5,6 +5,7 @@
     region: frankfurt
     plan: free
     branch: main
+    runtime: node
     buildCommand: yarn
     startCommand: npm start
     envVars:
@@ -20,6 +21,6 @@ databases:
     user: root # optional 
     password: MYSQL_PASSWORD
   - source: 127.0.0.1
-    runtime: node
+
 
 
