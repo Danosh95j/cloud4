@@ -3,7 +3,7 @@
     name: esgi.render.nodejs2
     repo: https://github.com/Danosh95j/cloud4 # optional
     region: frankfurt
-    buildCommand: npm run build
+    buildCommand: yarn
     startCommand: npm start
 
 databases:
