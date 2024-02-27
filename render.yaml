@@ -19,8 +19,8 @@
     region: frankfurt
     plan: free
     user: root # optional 
-    password: MYSQL_PASSWORD
-  - source: 127.0.0.1
+  #   password: MYSQL_PASSWORD
+  # - source: 127.0.0.1
 
 
 
