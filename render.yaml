@@ -1,24 +1,18 @@
  services:
   - type: web
-    name: esgi
-    repo: https://github.com/render-examples/webdis.git # optional
-#  # db 1
-#   - name: prod
-#     region: frankfurt
-#     plan: pro
-#     databaseName: prod_app
-#     user: app_user
-#     ipAllowList: # optional (defaults to allow all)
-#       - source: 203.0.113.4/30
-#         description: office
-#       - source: 198.51.100.1
-#         description: home
-#     readReplicas: # optional (defaults to no replicas)
-#       - name: prod-replica
+    name: esgi.render.nodejs2
+    repo: https://github.com/Danosh95j/cloud4 # optional
+    region: frankfurt
+    buildCommand: npm run build
+    startCommand: npm start
+
 databases:
   - name: esgidb
+    plan: free
     databaseName: mydb # optional (Render may add a suffix)
     user: root # optional 
     host: DB_URL
     password: MYSQL_PASSWORD
+  - source: 127.0.0.1
+    runtime: node
 
