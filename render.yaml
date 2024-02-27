@@ -6,9 +6,9 @@
     buildCommand: yarn
     startCommand: npm start
     envVars:
-    - key: DB_URL
+      - key: DB_URL
         fromDatabase:
-          name: esgidb
+          name: esgi.render.nodejs2
           property: connectionString
 
 databases:
