@@ -14,7 +14,7 @@
           name: esgi.render.nodejs2
           property: connectionString
 
-databases:
+ databases:
   - name: esgidb
     region: frankfurt
     plan: free
