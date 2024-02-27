@@ -5,14 +5,19 @@
     region: frankfurt
     buildCommand: yarn
     startCommand: npm start
+    envVars:
+    - key: DB_URL
+        fromDatabase:
+          name: esgidb
+          property: connectionString
 
 databases:
   - name: esgidb
+    region: frankfurt
     plan: free
-    databaseName: mydb # optional (Render may add a suffix)
     user: root # optional 
-    host: DB_URL
     password: MYSQL_PASSWORD
   - source: 127.0.0.1
     runtime: node
+
 
