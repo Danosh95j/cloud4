@@ -3,6 +3,8 @@
     name: esgi.render.nodejs2
     repo: https://github.com/Danosh95j/cloud4 # optional
     region: frankfurt
+    plan: free
+    branch: main
     buildCommand: yarn
     startCommand: npm start
     envVars:
